@@ -1,18 +1,24 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { MainLayout } from '@/components/layouts/main';
 import { HomePage } from '@/pages/home';
 import { ComponentsPracticePage } from '@/pages/components-practice';
 import { EmojiFinderPage } from '@/pages/emoji-finder';
+import { NotFoundPage } from '@/pages/not-found';
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: 'tasks/components', element: <ComponentsPracticePage /> },
+        { path: 'projects/emoji-finder', element: <EmojiFinderPage /> },
+        { path: '*', element: <NotFoundPage /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: 'tasks/components', element: <ComponentsPracticePage /> },
-      { path: 'projects/emoji-finder', element: <EmojiFinderPage /> },
-      { path: '*', element: <Navigate to="/" replace /> },
-    ],
-  },
-]);
+    basename: '/hexly_react',
+  }
+);
