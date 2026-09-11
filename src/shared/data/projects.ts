@@ -31,4 +31,14 @@ export const PROJECTS: ProjectCard[] = [
     isActive: true,
     meta: 'Figma • Flex/Grid',
   },
+  {
+      id: 'harry-potter',
+      tag: 'Проект №2',
+      title: 'Harry Potter',
+      description:
+        'Вёрстка макета из Figma с поиском и фильтрацией смайликов. Использование Flexbox, Grid.',
+      path: '/projects/harry-potter',
+      isActive: true,
+      meta: 'Figma • Flex/Grid',
+    },
 ];
