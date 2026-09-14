@@ -15,6 +15,8 @@ export default defineConfig({
       '@components': path.resolve(import.meta.dirname, './src/components'),
       '@shared': path.resolve(import.meta.dirname, './src/shared'),
       '@data': path.resolve(import.meta.dirname, './src/shared/data'),
+      '@mocks': path.resolve(import.meta.dirname, './src/mocks'),
+      '@services': path.resolve(import.meta.dirname, './src/services'),
       '@styles': path.resolve(import.meta.dirname, './src/styles'),
     },
   },

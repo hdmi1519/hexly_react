@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@components/ui/breadcrumbs';
 const ROUTE_META: Record<string, string> = {
   '/tasks/components': 'Компоненты',
   '/projects/emoji-finder': 'Emoji Finder',
+  '/projects/emoji-finder/api': 'Emoji Finder API',
   '/projects/harry-potter': 'Harry Potter',
 };
 

@@ -28,6 +28,8 @@
       "@components/*": ["./src/components/*"],
       "@shared/*": ["./src/shared/*"],
       "@data/*": ["./src/shared/data/*"],
+      "@mocks/*": ["./src/mocks/*"],
+      "@services/*": ["./src/services/*"],
       "@styles/*": ["./src/styles/*"],
     }
   },

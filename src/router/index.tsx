@@ -3,6 +3,7 @@ import { MainLayout } from '@/components/layouts/main';
 import { HomePage } from '@/pages/home';
 import { ComponentsPracticePage } from '@/pages/components-practice';
 import { EmojiFinderPage } from '@/pages/emoji-finder';
+import { EmojiFinderApiPage } from '@/pages/emoji-finder-with-api';
 import { NotFoundPage } from '@/pages/not-found';
 import { HarryPotterPage } from '@/pages/harry-potter';
 
@@ -14,6 +15,7 @@ export const router = createHashRouter([
       { index: true, element: <HomePage /> },
       { path: 'tasks/components', element: <ComponentsPracticePage /> },
       { path: 'projects/emoji-finder', element: <EmojiFinderPage /> },
+      { path: 'projects/emoji-finder/api', element: <EmojiFinderApiPage /> },
       { path: 'projects/harry-potter', element: <HarryPotterPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],

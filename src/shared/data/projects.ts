@@ -32,6 +32,16 @@ export const PROJECTS: ProjectCard[] = [
     meta: 'Figma • Flex/Grid',
   },
   {
+    id: 'emoji-finder/api',
+    tag: 'Проект №1.2',
+    title: 'Emoji Finder API',
+    description:
+      'API для поиска и фильтрации смайликов.',
+    path: '/projects/emoji-finder/api',
+    isActive: true,
+    meta: 'Figma • Flex/Grid',
+  },
+  {
       id: 'harry-potter',
       tag: 'Проект №2',
       title: 'Harry Potter',
